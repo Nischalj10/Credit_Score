@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html {
+                background: url(plain2.jpg) no-repeat center center fixed;
+                background-size: cover;
+                height: 100%;
+                overflow: hidden;
+            } 
+            
+            #Main_header {
+				display: flex;
+                align-content: stretch;
+				height: 90px;
+				color: lightsalmon;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				font-size:55px;
+				background-image: url(plain3.jpg);
+                padding-top: 10px;
+			}
+            
+            #Form_edit{
+                 display:flex;
+                 height: 35px;
+                 color:black;
+                 font-family: monospace;
+                 font-size: 30px;
+         }
+            
+            #submit {
+                width: 5em;  height: 2em;
+                font-family: monospace;
+                font-size: 30px;
+            }
+        </style>
+        <title>Login Page</title>
+    </head>
+    <body>
+        <h1 id="Main_header">Login</h1>
+        <br><br>
+        <form name="New user registration">
+            <font size="5" color="white">
+                <b>Email ID:</b><br>
+                <input id="Form_edit" type="text" name="email" required maxlength="40"><br><br>
+                <b>Password:</b><br>
+                <input type="password" name="password" id="Form_edit" required><br><br>
+                <button type="submit" id="submit" formaction="Personal_info_form.html">Login</button>
+            </font>
+        </form>
+    </body>
+</html>

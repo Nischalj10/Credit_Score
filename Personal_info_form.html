@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+     <style>
+      #Main_header 
+      {
+        display: flex;
+        height: 80px;
+        color: lightgray;
+        font-family: "Courier new" ,monospace;
+        font-size: 50px;
+        background: rgb(15,33,27);
+background: linear-gradient(135deg, rgba(15,33,27,1) 100%, rgba(252,0,255,0.977668333589361) 100%, rgba(6,33,144,0.9895308465182948) 100%, rgba(46,28,162,1) 100%);
+      }
+         
+    #Form_edit
+         {
+             display:flex;
+             height: 35px;
+             color:azure;
+             font-family: sans-serif;
+             font-size: 30px;
+             background: rgb(0,0,0);
+             background: linear-gradient(135deg, rgba(0,0,0,1) 38%, rgba(6,144,121,0.9895308465182948) 100%, rgba(252,0,255,0.4209033955379027) 100%);
+         }
+    #background
+         {
+             background: rgb(0,0,0);
+             background: linear-gradient(128deg, rgba(0,0,0,1) 0%, rgba(0,1,0,0.7710434515603116) 100%, rgba(0,212,255,1) 100%);
+         }
+    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Personal Details</title> 
+</head>
+   
+<body background="finance.jpg">
+  <h1 id="Main_header">Personal Details</h1>
+<form name="personal details" action="data.php" method="POST">
+    <font size="4" color="white">    
+    <b>Name :</b><br>
+  <input id="Form_edit" type="text" name="fname" required maxlength="40"><br><br>
+    <b>E-mail :</b><br>
+  <input id="Form_edit" type="email" name="email" required><br><br>
+    <b>Mobile Number :</b><br>
+    <input id="Form_edit" type="number" name="phone-no" required maxlength="12"><br><br>
+    <b>Unique Id :</b><br>
+    <input id="Form_edit" type="text" name="uid" required><br><br> 
+    <b>Gender :</b><br>
+  <input  type="radio" name="gender" value="male" checked> Male<br>
+  <input  type="radio" name="gender" value="female"> Female<br><br>
+  <input id="Form_edit" type="submit" value="Submit">
+    </font>
+</form>
+   
+</body>
+</html>
+

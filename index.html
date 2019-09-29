@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="eng">
+	<head>
+		<style>
+            html {
+                background: url(plain2.jpg) no-repeat center center fixed;
+                background-size: cover;
+                height: 100%;
+                overflow: hidden;
+            } 
+            
+            body {
+                overflow: scroll;
+                height: 1000px;
+                scroll-behavior: smooth;
+            }
+			#Main_header {
+				display: flex;
+                align-content: stretch;
+				height: 90px;
+				color: lightsalmon;
+				font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+				font-size:55px;
+				background-image: url(plain3.jpg);
+                padding-top: 10px;
+			}
+            
+            .sans{
+                font-family: "Trebuchet MS", Helvetica, sans-serif;
+                font-size: 40px;
+                margin-bottom: 0px;
+                color: white;
+            }
+            
+            #submit {
+                width: 5em;  height: 2em;
+                font-family: monospace;
+                font-size: 30px;
+            }
+            #Form_edit{
+                 display:flex;
+                 height: 35px;
+                 color:black;
+                 font-family: monospace;
+                 font-size: 30px;
+         }
+            .d1{
+                font-size: 35.5px;
+                font-family: Verdana, Geneva, sans-serif;
+                color: white;
+            }
+            .d2{ 
+                display: flex;
+                justify-content: center;
+                
+            }
+            .d3{ 
+                display: flex;
+                justify-content: center;
+            }
+            .d4{
+                font-family: "Trebuchet MS", Helvetica, sans-serif;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: 1000px 1fr;
+                grid-template-rows: 400px 1fr;
+            }
+		</style>
+		<meta charset="UTF-8">
+		<title>Credit Score</title>
+	</head>
+	<body>
+		<h1 id="Main_header">Credit Score Checker</h1>
+        <div class="container">
+            <div>
+                <h2 class="sans">Hey User,</h2>
+                <p class="d1">
+                Welcome to The Credit Solutions. Sign up now to check your credit score and see if you are eligible for loans/credit cards that you want.<br>
+                Wanna know how can a good credit score helps you? Or what a credit score is at the first place? Or just how we calculate it?<a href="FAQ.html" style="color: red;">Visit here.</a>
+                </p>
+            </div>
+            <div class="d2"><img src="creditscore.jpg" width="900 px"></div>
+            <div class="d3"><img src="loan.jpg" ></div>
+            <div class="d4">
+                <h2 class="sans">New User?</h2><br><br>
+                <form name="New user registration">
+                    <font size="5" color="white">
+                        <b>Email ID:</b><br>
+                        <input id="Form_edit" type="text" name="email" required maxlength="40" ><br>
+                        <b>Mobile Number :</b><br>
+                        <input id="Form_edit" type="number" name="phone-no" required maxlength="12"><br>
+                        <b>Unique Id :</b><br>
+                        <input id="Form_edit" type="text" name="uid" required><br> 
+                        <b>Password:</b><br>
+                        <input type="password" name="password" id="Form_edit"><br><br>
+                        <button type="submit" id="submit" formaction="Personal_info_form.html">Register</button><br>
+                        Already have an Account? <a href="login.html" style="color: blue;">Login here</a>
+                    </font>
+                </form>
+            </div>
+        </div>
+	</body>
+</html>
